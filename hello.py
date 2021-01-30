@@ -1,7 +1,8 @@
 from flask import Flask
 app = Flask(__name__)
 
-moje_imie = 'Natalia'
+moje_imie = 'Paulina'
+noje_zwierze = 'Kot'
 
 @app.route('/')
 def hello_world():
@@ -9,7 +10,7 @@ def hello_world():
 
 @app.route('/kto')
 def kto():
-    return moje_imie
+    return moje_zwierze
 
 
 @app.route('/wiadomosc')
